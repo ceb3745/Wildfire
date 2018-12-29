@@ -1,0 +1,95 @@
+commit 0a92a798bc31d9a8c0798cd04de1b29d80a2c761
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Thu Mar 1 20:37:19 2018 -0500
+
+    Fixed the dieing of the fires to be the same function of probability
+    of the catching of fires.
+
+commit 624ca5105e3d530d08319c9c111c6679e5e7abd7
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Thu Mar 1 19:13:51 2018 -0500
+
+    Reworked the way that the error message prints so that it actually uses
+    fprintf the way described in the write up. Didn't realize that it needed
+    to be printed that way.
+
+commit 0603019be97fd469c12cd35059d230fcff9c47f2
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Tue Feb 27 16:00:36 2018 -0500
+
+    Attempted to submit my files to no avail. The error message seems
+    to need to be specific format. Added in a define error message that would
+    show anytime an error occured. Added in the -p to the begging of the
+    finding of the 6th variable using scanf to find the appropriete integer.
+    If the variable is unable to be converted to integer an error message is thrown.
+    After testing appended the rules for my error message and didn't delete my singular
+    and plural modification, but I did delete the modification where it runs without
+    the variables being defined, because it was in the test sequences.
+
+commit e62021db7455305d467f6ce22c212958ba46aa3e
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Tue Feb 27 14:48:03 2018 -0500
+
+    finalized the cohesive syntax throughout.
+
+commit 4e36290657a03902b6255198da2489b7b562c55b
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Tue Feb 27 14:38:20 2018 -0500
+
+    Fixed the length of my lines to be smaller and more readable rather than
+    trailing off page.
+
+commit f5aaa5c7dafd9f4f66c391fbc9794f0c5fa41b90
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Tue Feb 27 14:32:42 2018 -0500
+
+    Inserted final comments and completed the implementation. Removed any
+    commented out print phrases used for debugging and inserted docstring
+    and in line comments about the functions. Completely my final functional
+    submission.
+
+commit 46482fd923f72d1da1546f513156dd0f23277118
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Mon Feb 26 18:23:04 2018 -0500
+
+    Added in the option for there to be 5 or 6 arguements based on argc
+    and created an if to change the programs execution based on this.
+    Added in preset arguements in case arguements are not defined.
+    I still need to change the size to be dependant on the arguement.
+    I changed the final print statement to mirror the execution.
+
+commit 92e6c72c281834a7a6e3c438d4e2c839e363dd72
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Mon Feb 26 15:40:53 2018 -0500
+
+    Created my own copy function which allows me to selectively copy
+    the original array into the copy array so that the pointee of the
+    original array is not simply placed into the copy array. Assigned
+    the self values associated with the orig array and then simply
+    declare references to itself for the copy array.
+    
+    Created the function water which uses the indices of the copy array
+    to delete any pre existing fires from the original array.
+    
+    Inserted the final end condition and line and then began to implement
+    a change count which seems like an insanely high number.
+
+commit b038a98bf61a680a5c3284776220f9913a501936
+Author: Carson Elizabeth Bloomingdale <ceb3745@cs.rit.edu>
+Date:   Mon Feb 26 15:23:08 2018 -0500
+
+    Created the project itself and implemented ideas from the write up and
+    from the homework 4 on Conway's Game of Life. This time creating
+    a struct called cell that contain it's state and then creating an outer
+    struct called tree that actually contained a struct of itself and then
+    a pointer to all of the neighboring structs situated in a multi-dimensional
+    array that is representative of the forest.
+    
+    Implemented basic data checking for reaching in the parameters. Shot out
+    error message in case of out of bounds variables. Then converted variables
+    to decimals for further study. Created the function argtoInt which checks
+    if it is possible for the arguement to be converted to an int.
+    
+    I then began counting neighbors and found that I would get a SEG FAL if
+    I reached outside of the array bounds, and instead assigned which neighboring
+    cells it would check depending on which part of the array it was in.

@@ -1,0 +1,83 @@
+Assignment Report
+Assignment name is: Wildfire
+My name is: 			<<<Carson Bloomingdale>>>
+My login ID is:			<<<ceb3745D>>>
+
+[insert your answers after the question and add more lines as needed.]
+
+	[MAKE ANSWERS SHORT AND TO THE POINT. USE 'BULLET POINT' OUTLINES.]
+
+	[USE PLAIN TEXT]
+
+
+============= PROGRAM STATUS ==============
+
+What is the status of the program?
+
+The program runs correctly according to implementation
+- takes in arguements and changes implementation based on
+the existance or no existance of the optional arguements
+
+- updates the array based on the rules of fire spread by
+checking how many of the neighboring cells contain a burning tree
+
+- ends based on implementation choice
+
+- catches if there are no fires on generation 0 not generation 1. 
+
+[e.g. does it run right or crash, infinite loop when it should not, other?]
+
+	[you will lose fewer points if 
+	 you clearly describe the problems
+	 and your work to solve those problems.]
+
+
+
+
+============= PROGRAM USAGE, OPTIONS AND Extra Credit ==
+
+If you implemented extra credit or special, describe your results here.
+
+I changed the final message to change based on singular or plural to the word
+change. I found during testing that many times the final stage would have one 
+fire left and only one more change to make and then in the final stage there
+would be "1 changes" so I changed it to say "1 change".
+
+[see the writeup for extra credit requirements if this applies to your work.]
+
+
+
+============= GENERAL PROJECT FEEDBACK ==============
+
+What did I learn?
+
+I learned a lot about how to use structs and pointers. I would've never been as
+risky as to use structs and pointer myself and I like that this lab allowed me to 
+experiment with my knowledge. I learned a lot about debugging. I was constantly popping
+in and out of gdb trying to debug the simplest of problems. 
+
+What was easy about this assignment?
+
+The easiest thing about this assignment was the concept. Having done the homework previously
+on Conway's game of life I understood the basics of implementation the trouble was really 
+elsewhere.
+
+What gave you problems or troubles?
+
+The most troublesome thing for me was the copying of the arrays. I eventually found out that
+memcopy would not work for the way that I set up my array of structs and I was stuck on that
+for days trying to figure out why my array wasn't actually changing in the correct order. It 
+was because the pointers to neighbors in the copy array were the same pointers from the orig
+array.
+
+What would you like the instructor to do to improve this assignment?
+
+I think that the format of the instructions could be improved. I understand the way the write
+up is presented is something that is done throughout everything. I think that the entire
+process would be easier to understand if it was structered more pleasing to the eye, even if
+there were more pictures so that there was visual and spatial representation of concepts. 
+
+What would you have liked to do in this assignment?
+
+I think that I have exhausted what I would like to do with the assignment itself. The knowledge
+of structs makes me want to look into more different types of data management.
